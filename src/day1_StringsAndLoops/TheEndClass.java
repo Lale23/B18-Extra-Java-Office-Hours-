@@ -1,21 +1,38 @@
 package day1_StringsAndLoops;
 
 public class TheEndClass {
-    public static void main(String[] args) {
-        System.out.println(firstTwo("hello"));
-        System.out.println(firstTwo(""));
-        System.out.println(firstTwo("g"));
+
+
+    public String theEnd(String str, boolean front) {
+        // String res = "";
+
+        // if(front) {
+        //   res = str.substring(0,1);
+        //   // res = "" + str.charAt(0);
+        //   // res = String.valueOf(str.charAt(0))l
+        // } else {
+        //   res = str.substring(str.length()-1);
+        // }
+
+        // return res;
+
+        //////-----
+
+
+        // if(front) {
+        //   return str.substring(0,1);
+        // } else {
+        //   return str.substring(str.length()-1);
+        // }
+
+
+        if(front) return str.substring(0,1);
+
+        return str.substring(str.length()-1);
+
+
     }
 
-    public static String firstTwo(String str) {
-
-        if(str.length() < 2) return str;
-
-        return str.substring(0,2);
-
-        // return str.length() >= 2 ? str.substring(0,2)  : str;
-
-    }
 
 
 }
